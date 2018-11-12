@@ -10,7 +10,6 @@ class EnemyTest {
         int heroHP = 10;
         Hero hero = new Hero("テスト勇者", heroHP, 5);
         Enemy enemy = new Enemy("テストスライム", 6, 3);
-        enemy.dead = true;
         while (enemy.hitPoint>0) {
             hero.attack(enemy); //乱数で0ダメージとなることもあるため、複数回実行してみる// 。
         }
